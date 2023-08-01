@@ -1,0 +1,462 @@
+#gui:hover {
+  cursor: pointer;
+  fill: #70e052;
+}
+.principal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#object {
+  width: 100%;
+  height: 98vh;
+}
+#radijaG:hover path {
+  cursor: pointer;
+  fill: #0080f0;
+}
+#tayssa:hover {
+  cursor: pointer;
+  fill: #ff494e;
+}
+#naelyG:hover path {
+  cursor: pointer;
+  fill: #ff49b6;
+}
+#beatrizG:hover path {
+  cursor: pointer;
+  fill: #8c5bff;
+}
+#graziG:hover path {
+  cursor: pointer;
+  fill: #ffe459;
+}
+.nav {
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Estilo do modal */
+button {
+    padding: 0.6rem 1.2rem;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 1rem;
+  }
+  
+  #open-modal {
+    background-color: #007bff;
+  }
+  
+  button:hover {
+    opacity: 1;
+  }
+  
+  #fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+  }
+  
+  /*  */
+  #modal {
+    display: flex;
+    justify-items: end;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 502px;
+    background-color: #00000038;
+    max-width: 90%;
+    border-radius: 0.5rem;
+    z-index: 10;
+  }
+
+  .botaoModal{
+    height: 50px;
+    width: 50px;
+  }
+  
+
+
+  #fade,
+  #modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .modal-body{
+    width: 285px;
+    height: 520px;
+  }
+  .modal-body p {
+    margin-bottom: 1rem;
+  }
+  
+  #modal.hide,
+  #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #modal.hide {
+    top: 0;
+  }
+
+  /* Guilherme  */
+
+  #modalGuilherme {
+    display: flex;
+    justify-items: end;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 502px;
+    background-color: #00000038;
+    max-width: 90%;
+    border-radius: 0.5rem;
+    z-index: 10;
+  }
+  #fade,
+  #modalGuilherme {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #modalGuilherme.hide,
+  #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #modalGuilherme.hide {
+    top: 0;
+  }
+
+  /* Radija  */
+
+  #modalRadija {
+    display: flex;
+    justify-items: end;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 502px;
+    background-color: #00000038;
+    max-width: 90%;
+    border-radius: 0.5rem;
+    z-index: 10;
+  }
+  #fade,
+  #modalRadija {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #modalRadija.hide,
+  #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #modalRadija.hide {
+    top: 0;
+  }
+
+    /* Beatriz  */
+
+    #modalBeatriz {
+      display: flex;
+      justify-items: end;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 502px;
+      background-color: #00000038;
+      max-width: 90%;
+      border-radius: 0.5rem;
+      z-index: 10;
+    }
+    #fade,
+    #modalBeatriz {
+      transition: 0.5s;
+      opacity: 1;
+      pointer-events: all;
+    }
+  
+    #modalBeatriz.hide,
+    #fade.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    #modalBeatriz.hide {
+      top: 0;
+    }
+
+    /* Grazielly  */
+
+    #modalGrazielly {
+      display: flex;
+      justify-items: end;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 502px;
+      background-color: #00000038;
+      max-width: 90%;
+      border-radius: 0.5rem;
+      z-index: 10;
+    }
+    #fade,
+    #modalGrazielly {
+      transition: 0.5s;
+      opacity: 1;
+      pointer-events: all;
+    }
+  
+    #modalGrazielly.hide,
+    #fade.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    #modalGrazielly.hide {
+      top: 0;
+    }
+
+  /* Tayssa  */
+
+  #modalTayssa {
+    display: flex;
+    justify-items: end;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 502px;
+    background-color: #00000038;
+    max-width: 90%;
+    border-radius: 0.5rem;
+    z-index: 10;
+  }
+  #fade,
+  #modalTayssa {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #modalTayssa.hide,
+  #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #modalTayssa.hide {
+    top: 0;
+  }
+
+  #button1_guilherme{
+    width: 34px;
+    height: 36px;
+    border-radius: 100px;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 42px;
+    margin-left: 268px;
+  }
+
+  #button1_guilherme:hover{
+    background-color: #91ce80c5;
+  }
+  
+  #button2_guilherme:hover{
+    background-color: #91ce80c5;
+  }
+
+  #button2_guilherme{
+    width: 34px;
+    height: 36px;
+    border-radius: 100px;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 42px;
+    margin-left: 22px;
+  }
+
+  #button1_naely{
+    width: 34px;
+    height: 36px;
+    border-radius: 100px;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 42px;
+    margin-left: 268px;
+  }
+
+  #button1_naely:hover{
+    background-color: #ff7dcbb4;
+  }
+  
+  #button2_naely:hover{
+    background-color: #ff7dcbb4;
+  }
+
+  #button2_naely{
+    width: 34px;
+    height: 36px;
+    border-radius: 100px;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 42px;
+    margin-left: 22px;
+  }
+    
+  #button1_radija{
+    width: 34px;
+    height: 36px;
+    border-radius: 100px;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 42px;
+    margin-left: 268px;
+  }
+
+  #button1_radija:hover{
+    background-color: #40a6ffaf;
+  }
+  
+  #button2_radija:hover{
+    background-color: #40a6ffaf;
+  }
+
+  #button2_radija{
+    width: 34px;
+    height: 36px;
+    border-radius: 100px;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 42px;
+    margin-left: 22px;
+  }
+
+  #button1_beatriz{
+    width: 34px;
+    height: 36px;
+    border-radius: 100px;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 42px;
+    margin-left: 268px;
+  }
+
+  #button1_beatriz:hover{
+    background-color: #9747ffb2;
+  }
+  
+  #button2_beatriz:hover{
+    background-color: #9747ffb2;
+  }
+
+  #button2_beatriz{
+    width: 34px;
+    height: 36px;
+    border-radius: 100px;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 42px;
+    margin-left: 22px;
+  }
+
+  #button1_grazielly{
+    width: 34px;
+    height: 36px;
+    border-radius: 100px;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 42px;
+    margin-left: 268px;
+  }
+
+  #button1_grazielly:hover{
+    background-color: #ffed90b2;
+  }
+  
+  #button2_grazielly:hover{
+    background-color: #ffed90b2;
+  }
+
+  #button2_grazielly{
+    width: 34px;
+    height: 36px;
+    border-radius: 100px;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 42px;
+    margin-left: 22px;
+  }
+
+  
+  #button1_tayssa{
+    width: 34px;
+    height: 36px;
+    border-radius: 100px;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 42px;
+    margin-left: 268px;
+  }
+
+  #button1_tayssa:hover{
+    background-color: #ff6469b9;
+  }
+  
+  #button2_tayssa:hover{
+    background-color: #ff6469b9;
+  }
+
+  #button2_tayssa{
+    width: 34px;
+    height: 36px;
+    border-radius: 100px;
+    align-self: flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 42px;
+    margin-left: 22px;
+  }
+  
+

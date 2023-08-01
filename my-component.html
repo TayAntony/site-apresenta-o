@@ -1,0 +1,36 @@
+<template id="my-component-template">
+    <style>
+      /* Estilize o componente aqui */
+      .my-component {
+        background-color: lightblue;
+        padding: 20px;
+      }
+    </style>
+  
+    <div class="my-component">
+      <!-- Conteúdo do componente aqui -->
+      <h2>Meu Componente</h2>
+      <p>Este é o meu componente reutilizável.</p>
+    </div>
+  </template>
+  
+  <script>
+    // Defina a classe do componente
+    class MyComponent extends HTMLElement {
+      constructor() {
+        super();
+  
+        // Crie um shadow root para o componente
+        const shadowRoot = this.attachShadow({ mode: "open" });
+  
+        // Obtenha o conteúdo do template e clone-o para o shadow root
+        const template = document.getElementById("my-component-template");
+        const instance = template.content.cloneNode(true);
+        shadowRoot.appendChild(instance);
+      }
+    }
+  
+    // Registre o elemento personalizado
+    customElements.define("my-component", MyComponent);
+  </script>
+  
